@@ -1,0 +1,308 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "integer"
+    },
+    "errors": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "cardToDateMap": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "shipCode": {
+                  "type": "string"
+                },
+                "dates": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "cardIdentifier": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shipCode",
+                "dates",
+                "cardIdentifier"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "shipCode": {
+                  "type": "string"
+                },
+                "dates": {
+                  "type": "string"
+                },
+                "cardIdentifier": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shipCode",
+                "dates",
+                "cardIdentifier"
+              ]
+            }
+          ]
+        },
+        "needToKnowCards": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "entryPoint": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "subTitle": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "subTitle"
+                  ]
+                },
+                "cardIdentifier": {
+                  "type": "string"
+                },
+                "cardSortNumber": {
+                  "type": "integer"
+                },
+                "cardTitle": {
+                  "type": "string"
+                },
+                "cardSubtitle": {
+                  "type": "string"
+                },
+                "cardDescription": {
+                  "type": "string"
+                },
+                "cardImageHeroUrl": {
+                  "type": "string"
+                },
+                "includedDayCards": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "cardIdentifier": {
+                          "type": "string"
+                        },
+                        "cardSortNumber": {
+                          "type": "integer"
+                        },
+                        "ctaCardType": {
+                          "type": "string"
+                        },
+                        "cardTitle": {
+                          "type": "string"
+                        },
+                        "cardSubtitle": {
+                          "type": "string"
+                        },
+                        "cardDescription": {
+                          "type": "string"
+                        },
+                        "cardImageUrl": {
+                          "type": "string"
+                        },
+                        "cardCtaInfo": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "ctaType": {
+                                  "type": "string"
+                                },
+                                "ctaDescription": {
+                                  "type": "string"
+                                },
+                                "ctaRefLink": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "ctaType",
+                                "ctaDescription",
+                                "ctaRefLink"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "cardIdentifier",
+                        "cardSortNumber",
+                        "ctaCardType",
+                        "cardTitle",
+                        "cardSubtitle",
+                        "cardDescription",
+                        "cardImageUrl",
+                        "cardCtaInfo"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "entryPoint",
+                "cardIdentifier",
+                "cardSortNumber",
+                "cardTitle",
+                "cardSubtitle",
+                "cardDescription",
+                "cardImageHeroUrl",
+                "includedDayCards"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "entryPoint": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "subTitle": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "subTitle"
+                  ]
+                },
+                "cardIdentifier": {
+                  "type": "string"
+                },
+                "cardSortNumber": {
+                  "type": "integer"
+                },
+                "cardTitle": {
+                  "type": "string"
+                },
+                "cardSubtitle": {
+                  "type": "string"
+                },
+                "cardDescription": {
+                  "type": "string"
+                },
+                "cardImageHeroUrl": {
+                  "type": "string"
+                },
+                "includedDayCards": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "cardIdentifier": {
+                          "type": "string"
+                        },
+                        "cardSortNumber": {
+                          "type": "integer"
+                        },
+                        "ctaCardType": {
+                          "type": "string"
+                        },
+                        "cardTitle": {
+                          "type": "string"
+                        },
+                        "cardSubtitle": {
+                          "type": "string"
+                        },
+                        "cardDescription": {
+                          "type": "string"
+                        },
+                        "cardImageUrl": {
+                          "type": "string"
+                        },
+                        "cardCtaInfo": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "ctaType": {
+                                  "type": "string"
+                                },
+                                "ctaDescription": {
+                                  "type": "string"
+                                },
+                                "ctaRefLink": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "ctaType",
+                                "ctaDescription",
+                                "ctaRefLink"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "cardIdentifier",
+                        "cardSortNumber",
+                        "ctaCardType",
+                        "cardTitle",
+                        "cardSubtitle",
+                        "cardDescription",
+                        "cardImageUrl",
+                        "cardCtaInfo"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "entryPoint",
+                "cardIdentifier",
+                "cardSortNumber",
+                "cardTitle",
+                "cardSubtitle",
+                "cardDescription",
+                "cardImageHeroUrl",
+                "includedDayCards"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "cardToDateMap",
+        "needToKnowCards"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "errors",
+    "payload"
+  ]
+}

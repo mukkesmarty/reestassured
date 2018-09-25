@@ -9,8 +9,12 @@
     		<include name = "getforecastweather"/>
     		<include name = "getweatherbyvoyage"/>
     	</define>
+    	<define name = "needtoknow">
+    		<include name = "getneedtoknow"/>
+    	</define>
     	<run>
     		<include name = "weatherinfo"/>
+    		<include name = "needtoknow"/>
     		<include name = "tst"/>
     	</run>
     </groups>
