@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name = "API Automation test run">
+  <test name = "HEALTH CHECK">
+    <groups>
+    	<define name = "weatherinfo">
+    		<include name = "getweatherinfo"/>
+    		<include name = "getcurrentweather"/>
+    		<include name = "getforecastweather"/>
+    		<include name = "getweatherbyvoyage"/>
+    	</define>
+    	<run>
+    		<include name = "weatherinfo"/>
+    		<include name = "tst"/>
+    	</run>
+    </groups>
+    <classes>
+    <class name = "com.knoldus.restassured.weatherInfoTest"/>
+    </classes>
+  </test>
+</suite>

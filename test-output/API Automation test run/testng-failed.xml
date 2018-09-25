@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Automation test run]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="HEALTH CHECK(failed)">
+    <groups>
+      <run>
+        <include name="weatherinfo"/>
+        <include name="tst"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.knoldus.restassured.weatherInfoTest">
+        <methods>
+          <include name="toverifysuccesscase"/>
+        </methods>
+      </class> <!-- com.knoldus.restassured.weatherInfoTest -->
+    </classes>
+  </test> <!-- HEALTH CHECK(failed) -->
+</suite> <!-- Failed suite [API Automation test run] -->

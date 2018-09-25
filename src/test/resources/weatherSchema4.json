@@ -1,0 +1,564 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "integer"
+    },
+    "errors": {
+      "type": "array",
+      "items": {}
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "current": {
+          "type": "object",
+          "properties": {
+            "sunrise": {
+              "type": "string"
+            },
+            "sunset": {
+              "type": "string"
+            },
+            "weather": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string"
+                    },
+                    "icon": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "integer"
+                    },
+                    "shortDescription": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "description",
+                    "icon",
+                    "id",
+                    "shortDescription"
+                  ]
+                }
+              ]
+            },
+            "currentTemp": {
+              "type": "number"
+            },
+            "minTemp": {
+              "type": "number"
+            },
+            "maxTemp": {
+              "type": "number"
+            },
+            "pressure": {
+              "type": "number"
+            },
+            "humidity": {
+              "type": "number"
+            },
+            "windSpeed": {
+              "type": "number"
+            },
+            "windDirectionDeg": {
+              "type": "number"
+            },
+            "currentRainFallPercent": {
+              "type": "number"
+            },
+            "cloudPercent": {
+              "type": "number"
+            },
+            "lastUpdateTime": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sunrise",
+            "sunset",
+            "weather",
+            "currentTemp",
+            "minTemp",
+            "maxTemp",
+            "pressure",
+            "humidity",
+            "windSpeed",
+            "windDirectionDeg",
+            "currentRainFallPercent",
+            "cloudPercent",
+            "lastUpdateTime"
+          ]
+        },
+        "forecast": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "day": {
+                  "type": "integer"
+                },
+                "lastUpdateTime": {
+                  "type": "string"
+                },
+                "minTemp": {
+                  "type": "number"
+                },
+                "maxTemp": {
+                  "type": "number"
+                },
+                "pressure": {
+                  "type": "number"
+                },
+                "humidity": {
+                  "type": "number"
+                },
+                "windSpeed": {
+                  "type": "number"
+                },
+                "weather": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "description": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "shortDescription": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "description",
+                        "icon",
+                        "id",
+                        "shortDescription"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "day",
+                "lastUpdateTime",
+                "minTemp",
+                "maxTemp",
+                "pressure",
+                "humidity",
+                "windSpeed",
+                "weather"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "current",
+        "forecast"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "errors",
+    "payload"
+  ]
+}
