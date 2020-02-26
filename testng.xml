@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name = "API Automation test run">
+<parameter name = "AppKey" value = "Q3bWUuTVRTWMxWrlBhfpKy1CGPkNcQRO"/>
   <test name = "HEALTH CHECK">
     <groups>
     	<define name = "weatherinfo">
@@ -12,14 +13,21 @@
     	<define name = "needtoknow">
     		<include name = "getneedtoknow"/>
     	</define>
+    	<define name = "geofence">
+    		<include name = "GetPortsGeographyAllPorts"/>
+    	</define>
+    	
     	<run>
-    		<include name = "weatherinfo"/>
-    		<include name = "needtoknow"/>
+    		<exclude name = "weatherinfo"/>
+    		<exclude name = "needtoknow"/>
+    		<exclude name = "geofence"/>
     		<include name = "tst"/>
     	</run>
     </groups>
     <classes>
-    <class name = "com.knoldus.restassured.weatherInfoTest"/>
+    <class name = "com.knoldus.restassured.WeatherInfoTest"/>
+    <class name = "com.knoldus.restassured.NeedToKnowTest"/>
+    <class name = "com.knoldus.restassured.GetPortsGeographyAllPorts"/>
     </classes>
   </test>
 </suite>

@@ -1,10 +1,10 @@
 package com.knoldus.restassured;
 
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.*;
+import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+
 import org.testng.annotations.Test;
+
 import com.github.fge.jsonschema.SchemaVersion;
 import com.github.fge.jsonschema.cfg.ValidationConfiguration;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
@@ -17,14 +17,14 @@ public class NeedToKnowTest {
 				ValidationConfiguration.newBuilder()
 				.setDefaultVersion(SchemaVersion.DRAFTV4).freeze())
 		.freeze();
-		/*given().
+		given().
 				header("AppKey","Q3bWUuTVRTWMxWrlBhfpKy1CGPkNcQRO").
 		when().
-				get("https://tst1.api.rccl.com/en/royal/mobile/v2/weather/latitude/25.986076/longitude/80.30356/duration/9").
+				get("https://aws-tst1.api.rccl.com/en/royal/mobile/v1/ships/EG/sailDate/20180827/needToKnow").
 		then().
 				statusCode(200)
-				.body(matchesJsonSchemaInClasspath("weatherSchema4.json")
-						.using(jsonSchemaFactory));*/
+				.body(matchesJsonSchemaInClasspath("needtoknowSchema4.json")
+						.using(jsonSchemaFactory));
 		
 	}
 

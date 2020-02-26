@@ -6,7 +6,8 @@
       "type": "integer"
     },
     "errors": {
-      "type": "string"
+      "type": "array",
+      "items": {}
     },
     "payload": {
       "type": "object",
